@@ -1,0 +1,37 @@
+1 - touche index.html (Creation d'un fichier)
+
+2 - git init (Important pour initialiser projet sinon pb plus tard)
+
+3 - S'identifier avec sont compte GitHub : 
+	- git config --global user.name 'ibraCodeSave'
+	- git config --global user.email 'ihaddad294@gmail.com'
+
+4 - Pre-sauvegarde :
+	- git add index.html (pre-sauvegarder le fichier, integerer dans une liste de fichier à sauvegarder sur GitHub)
+	- git status (consulter les pre-sauvegardes, liste des fichier desfichier prêtà être sauvegarder)
+	- git rm --cached index.html (enleve le fichier le la liste depre-sauvegarde. Attention sans les "--" avant cached le fichier et supprimer completement pas seulement dans la liste)
+	- git add . (ajoute dans la liste de pre-sauvegarde tout les fichiers du repetoire courant)
+	- git add *.html *.css (ajoute dans la liste de pre-sauvegarde tout les fichiers du repetoire courant)
+	- git checkout -- . (Retour en arriere : Recup les fichiers ce trouvant dans la liste de pre-sauvegarde si ils ont ete supprimer du repertoire courant)
+
+  - Sauvegarde et recupération d'un fichier dans GitHub : 
+	- git commit (permet de sauvegarder la liste de fichier de la pre-sauvegarde dans GitHub)
+	- git merge 
+	(Ces deux commande ouvre un editeur VIM afin d'ajouter un commentaire, appuyer sur i jusqu'à avoir Insertion puis ecrire le commentaire. Pour quitter faire echap puis :wq)
+	
+	- git commit -m 'Votre commentaire' (Fait la même chose que git commit mais evite de passer par un editeur VIM)
+	- touch .gitignore (Creer le fichier gitignore et tout les nom de fichier ce trouvant dedans seront ignorés lors du git commit ou git status)
+
+	- git remote add origin https://github.com/IbraCodeSave/testGit.git (Push un dossier déjà existant dans le repository sur Github)
+	- git push -u origin master
+
+	- git push (Permet de mettre tout les fichier commiter sur le ripository de Github)
+
+	- git pull (recupère tout les fichier du Github, si un changement ou une création de fichier est faite elle apparaitera dans le dossier courant)
+
+6 - Changer de branche (Branche principal "master") : 
+	- git branch fichierJS (Creation d'une nouvelle branche)
+	- git checkout fichierJS (Ce placer sur la branche fichierJS)
+	- git branch --list (Afficher la liste des branches existante)
+	- git merge fichierJS (Fusionne les deux branches)
+	
